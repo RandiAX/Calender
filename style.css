@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: aqua; */
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Calender{
+    width: 450px;
+    height: 520px;
+    background-color: black;
+    color: lightgrey;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 4);
+
+}
+
+.month{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(47, 191, 191);
+    display: flex;
+    /* border-top-right-radius: 12px;
+    border-top-left-radius: 12px; */
+    border-radius: 12px 12px 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.month h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.month h2{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.month p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.weekdays{
+    width: 100%;
+    height: 70px;
+    display: flex;
+
+}
+
+.weekdays div{
+    font-size: 17px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    width: 100%;
+}
+
+.days div{
+    font-size: 16px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover:not(.empty){
+    border: 2px solid snow;
+    cursor: pointer;
+}
+
+.today{
+    background-color: rgb(72, 105, 158);
+    border-radius: 5px;
+}
+
+
+/* Digital clock */
+
+.Dclock{
+    width: 200px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+}
+
+.Dclock div{
+    
+    width: 20px;
+    height: 10px;
+    /* background: white;
+    border-radius: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dclock div > span{
+    position: absolute;
+    font-size: 14px;
+
+}
+/* .Dclock div > span:nth-child(1){
+    color: gainsboro;
+
+} */
+
+.Dclock > span {
+    color: rgb(250, 246, 246);
+    font-size: 14px;
+    /* margin: 0px 15px; */
+    /* filter: drop-shadow(0px 0px 8px #aaa); */
+}
